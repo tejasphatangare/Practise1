@@ -1,0 +1,332 @@
+/* CSS RESET */
+
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Sofia Sans Extra Condensed', sans-serif;
+    text-transform: capitalize;
+}
+
+/* NAVBAR START HERE */
+
+header{
+    background-image: url(../img/back1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+}
+
+.container {
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   
+}
+
+.maininfo{
+    color: white;
+    margin: 0 auto 0 auto;
+    margin-top: 86px;
+    padding:5px;
+    height: auto;
+    width:80%;
+    display:block;
+}
+.maininfo h2,h3{
+    text-align: center;
+    display:block;
+    height: auto;
+    width: auto;
+   margin-top: 20px;
+   color:white;
+   text-decoration: underline;
+   text-decoration-color: rgb(240, 111, 6);
+}
+
+.maininfo button{
+    margin: 0 auto 0 auto;
+    display: block;
+    margin-top: 10px;
+    padding: 2px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor:pointer;
+    box-shadow: 1px 1px white;
+}
+
+.maininfo button:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    text-decoration: underline;
+    text-decoration-color:orange;
+}
+
+.logo {
+    display: inline-block;
+    height: 30px;
+    margin: 5px;
+    padding: 0px;
+    display:inline-block;
+    text-decoration: underline;
+    text-decoration-color: white;
+    border: 2px solid white;
+    border-radius: 7px;
+}
+
+.logo h3 {
+    margin: 2px;
+    padding: 2px;
+    color: rgb(46, 236, 8);
+}
+
+.navbar {
+    margin-right: 5px;
+    margin-top: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 4px;
+    padding: 2px;
+    cursor: pointer;
+    text-shadow: 0.3px 0.4px white;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+    color: orange;
+    background-color: royalblue;
+    text-shadow: none;
+}
+
+
+/* NAVBAR END HERE */
+
+
+/* SECTION 1 START HERE */
+
+.box1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.box2 {
+    height: auto;
+    width: 250px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 0px;
+    padding: 10px;
+}
+
+.box2 img {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.box2 h4 {
+    color: white;
+    margin: 2px;
+    text-align: center;
+}
+
+.box2 p {
+    color: white;
+    text-align: justify;
+}
+
+
+/* SECTION 1 END HERE */
+
+
+/* SECTION 2ND START HERE */
+
+.box3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    background-color: white;
+}
+
+.box4 {
+    border: 1px solid black;
+    height: auto;
+    width: 300px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.box4 img {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.box4 h4 {
+    color: black;
+    margin: 2px;
+    text-align: center;
+}
+
+.box4 p {
+    color: black;
+    text-align: justify;
+}
+
+
+/* SECTION 2ND END HERE */
+
+
+/* SECTION 3RD START HERE */
+
+.tejas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 20px;
+}
+
+.tejas h2{
+    text-align: center;
+    color: white;
+    display: inline-block;
+    text-decoration: underline;
+    text-decoration-color: chartreuse;
+}
+
+.samu {
+    display: block;
+    width: 100%;
+    color: white;
+    text-align: center;
+    margin-top: 2px;
+}
+
+.samruddhi {
+    margin: 5px;
+    text-align: justify;
+    color: white;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+}
+
+.tejya {
+    border: 1px solid white;
+    height: auto;
+    width: 230px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.tejya img {
+    display: block;
+    margin: 0 auto 0 auto;
+}
+
+.tejya h4 {
+    color: white;
+    margin: 2px;
+    text-align: center;
+}
+
+.tejya p {
+    color: white;
+    text-align: justify;
+    word-wrap: break-word;
+}
+
+
+/* SECTION 3RD END HERE */
+
+
+/* MEDIA QUERY FOR 280 TO 500PX START HERE  (BREAKPOINT 1)*/
+
+
+@media screen and (min-width:280px) and (max-width:500px) {
+
+    header{
+        height: auto;
+    }
+
+    .navbar a {
+         margin-left: 7px;
+    }
+
+    .box2{
+        height: auto;
+        width: 100%;
+    }
+
+    .box4{
+        height: auto;
+        width: 100%;
+    }
+
+    .tejya{
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+/* MEDIA QUERY FOR 280 TO 500PX END  HERE */
+
+
+
+/* MEDIA QUERY FOR 500 TO 1000PX START HERE  (BREAKPOINT 2)*/
+
+
+@media screen and (min-width:500px) and (max-width:1000px) {
+
+    header{
+        height: auto;
+    }
+    .box2{
+        height: auto;
+        width: 80%;
+    }
+
+    .box4{
+        height: auto;
+        width: 80%;
+    }
+
+    .tejya{
+        height: auto;
+        width: 80%;
+    }
+}
+
+
+/* MEDIA QUERY FOR 500 TO 1000PX END  HERE */
+
+
+/* MEDIA QUERY FOR 1000 TO 1200PX START HERE  (BREAKPOINT 3)*/
+
+
+@media screen and (min-width:1000px) and (max-width:1200px) {
+
+    header{
+        height: auto;
+    }
+}
+
+
+/* MEDIA QUERY FOR 1000 TO 1200PX END  HERE */
